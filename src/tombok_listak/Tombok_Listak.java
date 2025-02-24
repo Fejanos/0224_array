@@ -4,6 +4,9 @@
  */
 package tombok_listak;
 
+import java.util.List;
+import java.util.ArrayList;
+
 /**
  *
  * @author János
@@ -115,6 +118,60 @@ public class Tombok_Listak {
         
         // Listák - dinamikus tömbök
         // Létrehozása
+        // int - Integer
+        List<Integer> szamLista = new ArrayList<>();
+        // indexelés 0-ról indul itt is
+        // Lista metódusok
+        // Elem hozzáadása
+        szamLista.add(10); // {10}
+        szamLista.add(4); // {10, 4}
+        szamLista.add(6); // {10, 4, 6}
+        // a lista végére fűzi az elemeket
+        
+        // Lista mérete
+        int listaMeret = szamLista.size(); // 3
+        
+        // Elem lekérdezése
+        int kivalasztott = szamLista.get(0); // 10
+        
+        // Elem törlése
+        szamLista.remove(1); // 4-es elem törlése
+        // {10, 6}
+        
+        // Elem módosítása
+        szamLista.set(1, 9); // 1. indexen lévő elemet módosítja 9-re
+        // {10, 9}
+        
+        // Lekérdezés elem alapján, indexet adja vissza
+        int index = szamLista.indexOf(10); // 10-es elem indexe = 0
+        // 0
+        
+        // Tartalmaz x -et?
+        boolean tartalmaz = szamLista.contains(10); // true
+        
+        // Lista ellenőrzés, hogy üres-e
+        boolean ures = szamLista.isEmpty();
+        
+        // Lista törlése, tisztítása
+        szamLista.clear(); // {} üres lista
+
+        /*
+        Hozzon létre egy ArrayList-et, amely három nevet tárol! 
+        Ezután:
+        - Írja ki a második nevet!
+        - Adjon hozzá egy új nevet a listához!
+        - Írja ki a lista teljes méretét!
+        */
+        List<String> nevek = new ArrayList<>();
+        nevek.add("Zoltán");
+        nevek.add("Emese");
+        nevek.add("Gábor");
+        // Írjuk ki a 2. nevet
+        System.out.println("Név: " + nevek.get(1));
+        //  Adjunk hozzá új nevet
+        nevek.add("Márió");
+        // Írjuk ki az aktuális lista méretet
+        System.out.println("A lista mérete: " + nevek.size());
     }
     
 }
