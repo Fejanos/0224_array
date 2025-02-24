@@ -80,7 +80,41 @@ public class Tombok_Listak {
         szavak[1] = "körte";
         szavak[2] = "eper";
         
+        // konkrét értékek az indexen
         String[] szavak2 = {"alma", "körte", "eper"}; // 3 elemű
+        
+        // Tömbökd 2D - mátrixok/táblázatok
+        // Létrehozás
+        int[][] matrix = new int[3][3]; // [sor][oszlop] 3x3 üres
+        int[][] matrix2 = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        }; // 3x3 konkrét elemekkel
+        // [0][0] = 1   [0][1] = 2  [0][2] = 3
+        // [1][0] = 4   [1][1] = 5  [1][2] = 6
+        // [2][0] = 7   [2][1] = 8  [2][2] = 9
+        // Sorok számának lekérdezése
+        int sor = matrix2.length;
+        // Oszlopok számának lekérdezése
+        int oszlop1 = matrix2[0].length; // első sor oszlopainak száma
+        int oszlop2 = matrix2[1].length; // 2. sor oszlopainak száma
+        int oszlop3 = matrix2[2].length; // 3. sor oszlopainak száma
+        
+        /*
+        Hozzon létre egy 3x2-es tömböt, amely tartalmazza bolti termékek nevét és azok árát! 
+        Ezután írja ki a második termék nevét és az árát!
+        */
+        String[][] termekek = {
+            {"Kenyér", "1000 Ft"},
+            {"Tej", "520 Ft"},
+            {"Parizer", "600 Ft"}
+        };
+        System.out.println("Termék neve: " + termekek[1][0] + " - " + termekek[1][1]);
+        
+        
+        // Listák - dinamikus tömbök
+        // Létrehozása
     }
     
 }
